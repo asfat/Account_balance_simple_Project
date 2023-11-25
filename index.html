@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Account Balance</title>
+</head>
+<body>
+    <div class="ammount-container">
+        <div class="ammount deposite">
+            <div style="text-align: center;">
+                <h1 id="deposite_box_deposite">00</h1>
+                <p>deposite</p>
+            </div>
+            
+        </div>
+        <div class="ammount withdraw">
+            <div style="text-align: center;">
+                <h1 id="withdraw_box_withdraw">00</h1>
+                <p>withdraw</p>
+            </div>
+        </div>
+        <div class="ammount total">
+            <div style="text-align: center;">
+                <h1 id="total-ammount">00</h1>
+                <p>total</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="button-container">
+        <div class="button-cover" style="text-align: center;">
+            <div>
+                <input type="number" class="input-area" id="input_box_deposite">
+                <br>
+                <button onclick="deposite_handler()" class="btn btn-deposite">Deposite</button>
+            </div>
+
+        </div>
+        <div class="button-cover">
+            <div style="text-align: center;">
+                <input type="number" class="input-area" id="input_box_withdraw">
+                <br>
+                <button onclick="withdraw_handle()" class="btn btn-withdraw">withdraw</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- this is script file  -->
+    <script src="app.js"></script>
+</body>
+</html>
